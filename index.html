@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jesus Itel Montenegro</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:dark;--bg:#151310;--text:#f5f0e9;--muted:#b7afa4;--line:rgba(245,240,233,.2);--panel:rgba(255,255,255,.055);--panel-hover:rgba(255,255,255,.12)}
+*,*::before,*::after{box-sizing:inherit}
+body{min-height:100vh;min-height:100svh;margin:0;background:radial-gradient(ellipse at 18% 12%,rgba(119,78,62,.3),transparent 40%),radial-gradient(ellipse at 85% 78%,rgba(94,82,59,.2),transparent 38%),var(--bg);color:var(--text);font-family:'DM Sans',system-ui,-apple-system,'Segoe UI',Arial,sans-serif}
+main{position:relative;width:100%;max-width:680px;min-height:100vh;min-height:100svh;margin:0 auto;padding:clamp(36px,8vh,88px) clamp(18px,4vw,32px);display:flex;flex-direction:column;justify-content:center}
+main::before{position:absolute;z-index:-1;top:50%;left:50%;width:min(78vw,420px);height:min(78vw,420px);border:1px solid rgba(226,193,157,.08);border-radius:50%;content:"";transform:translate(-50%,-55%);box-shadow:0 0 100px rgba(153,104,75,.09)}
+.eyebrow{margin:0 0 18px;text-align:center;color:#d0aa86;font-size:.7rem;font-weight:600;letter-spacing:.2em}
+h1{margin:0;text-align:center;font-family:'Playfair Display',Georgia,serif;font-weight:500;font-size:clamp(1.7rem,7vw,3.2rem);line-height:1.12;letter-spacing:-.045em}
+.social{display:flex;justify-content:center;gap:12px;margin:24px 0 42px}
+.social a{display:grid;place-items:center;width:44px;height:44px;border:1px solid var(--line);border-radius:50%;background:var(--panel);transition:background .2s,border-color .2s,transform .2s}
+.social a:hover{transform:translateY(-2px);border-color:rgba(245,240,233,.5);background:var(--panel-hover)}
+.social svg{width:24px;height:24px;display:block}
+.links{display:flex;flex-direction:column;gap:14px;counter-reset:link}
+.card{position:relative;isolation:isolate;overflow:hidden;display:flex;align-items:center;gap:16px;min-height:clamp(116px,15vw,148px);padding:0 clamp(18px,3vw,26px);border:1px solid var(--line);border-radius:5px;background-color:var(--panel);background-position:center 45%;background-size:cover;color:var(--text);text-decoration:none;text-transform:uppercase;font-size:.87rem;font-weight:500;letter-spacing:.12em;transition:background-color .2s,border-color .2s,transform .2s}
+.card:nth-child(1){border-color:rgba(222,177,130,.4);background-image:linear-gradient(90deg,rgba(36,25,17,.76),rgba(108,70,37,.28)),url("https://lnvuperyctbuquqvaufw.supabase.co/storage/v1/object/public/gallery/general/1792367039061-20250601_140425-0-.jpg");background-size:auto,112% auto}
+.card:nth-child(2){border-color:rgba(255,145,82,.28);background-image:linear-gradient(90deg,rgba(28,19,15,.8),rgba(105,54,30,.2)),url("https://lnvuperyctbuquqvaufw.supabase.co/storage/v1/object/public/gallery/hotrack/1789192826282-dsc_0134.jpg");background-size:auto,112% auto}
+.card-art{position:absolute;z-index:-1;inset:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:minmax(0,1fr);opacity:.85}
+.card-art img{min-width:0;min-height:0;width:100%;height:100%;object-fit:cover}
+.card-art::after{position:absolute;inset:0;background:linear-gradient(90deg,rgba(18,16,14,.88),rgba(18,16,14,.22)),linear-gradient(90deg,transparent 17%,rgba(18,16,14,.38) 25%,transparent 33%,transparent 42%,rgba(18,16,14,.38) 50%,transparent 58%,transparent 67%,rgba(18,16,14,.38) 75%,transparent 83%);content:""}
+.card:nth-child(4) .card-art{grid-template-columns:repeat(2,minmax(0,1fr))}
+.card:nth-child(4) .card-art::after{background:linear-gradient(90deg,rgba(18,16,14,.3),rgba(18,16,14,.04)),linear-gradient(90deg,transparent 38%,rgba(18,16,14,.42) 50%,transparent 62%)}
+.card:nth-child(4) .card-art img:first-child{object-position:center 38%}
+.card:nth-child(4) .card-art img:last-child{object-position:center 13%}
+.card:nth-child(3){border-color:rgba(222,222,222,.42)}
+.card:nth-child(3) .card-art img{filter:grayscale(.78)}
+.card:nth-child(3) .card-art::after{background:linear-gradient(90deg,rgba(18,18,18,.72),rgba(18,18,18,.12)),linear-gradient(90deg,transparent 17%,rgba(18,18,18,.38) 25%,transparent 33%,transparent 42%,rgba(18,18,18,.38) 50%,transparent 58%,transparent 67%,rgba(18,18,18,.38) 75%,transparent 83%)}
+.card:nth-child(4){border-color:rgba(29,185,84,.48)}
+.card:nth-child(4) .card-art::after{background:linear-gradient(90deg,rgba(5,35,20,.36),rgba(5,35,20,.1)),linear-gradient(90deg,transparent 38%,rgba(5,35,20,.42) 50%,transparent 62%)}
+.card:nth-child(2)::before{color:#d9a17f}
+.card:nth-child(4)::before{color:#8ce0a7}
+.brand-mark{width:29px;height:29px;flex:none;margin-left:auto}
+.card:nth-child(1)::after,.card:nth-child(3)::after,.card:nth-child(4)::after{margin-left:0}
+.gallery-mark{color:#e5b47e}
+.vsco-mark{width:29px;height:29px;object-fit:contain}
+.hotrack-icon{width:50px;height:50px;margin-left:auto;margin-right:-6px;object-fit:contain;opacity:1}
+.spotify-mark{width:29px;height:29px;object-fit:contain}
+.card::after{margin-left:auto;content:"↗";color:var(--muted);font-size:1.1rem;transition:color .2s,transform .2s}
+.card:nth-child(2)::after{margin-left:0}
+.card:hover{transform:translateY(-2px);border-color:rgba(245,240,233,.5);background-color:var(--panel-hover)}
+.card:hover::after{transform:translate(2px,-2px);color:var(--text)}
+.card:focus-visible,.social a:focus-visible{outline:2px solid #d0aa86;outline-offset:4px}
+@media (max-width:420px){main{padding:38px 18px}.social{margin:20px 0 34px}.links{gap:12px}.card{min-height:116px;padding-right:17px;padding-left:17px;font-size:.82rem}.brand-mark{width:27px;height:27px}.hotrack-icon{width:46px;height:46px;margin-right:-5px}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">Links · 2026</p>
+  <h1>Jesus Itel Montenegro</h1>
+
+  <div class="social">
+    <!-- WhatsApp: cambia el número (código de país + número, sin + ni espacios) -->
+    <a href="https://wa.me/543516420165" target="_blank" rel="noopener" aria-label="WhatsApp">
+      <svg viewBox="9 9 46 46">
+        <path d="M32 12a19 19 0 0 0-16.3 28.8L13 51l10.5-2.6A19 19 0 1 0 32 12z" fill="none" stroke="#f5f0e9" stroke-width="3.5" stroke-linejoin="round"/>
+        <path d="M25 22c-1.5.5-3 2.5-2.6 5 .9 4.6 6.9 10.7 12.1 11.9 2.3.5 4.4-1 5-2.6l-4-2.5-2 1.6c-2-.7-5.4-4.1-6.2-6.2l1.7-2z" fill="#fff"/></svg>
+    </a>
+    <!-- Instagram: cambia tuusuario -->
+    <a href="https://www.instagram.com/jebuu_m/" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg viewBox="0 0 64 64">
+        <rect x="4" y="4" width="56" height="56" rx="16" fill="none" stroke="#f5f0e9" stroke-width="5"/>
+        <circle cx="32" cy="32" r="12" fill="none" stroke="#f5f0e9" stroke-width="5"/>
+        <circle cx="47" cy="17" r="3.5" fill="#f5f0e9"/></svg>
+    </a>
+    <a href="mailto:jesusmontenegro953@gmail.com" aria-label="Enviar correo a Jesus Itel Montenegro">
+      <svg viewBox="4 6 56 52" fill="none" aria-hidden="true">
+        <rect x="6" y="8" width="52" height="48" rx="5" stroke="#f5f0e9" stroke-width="4"/>
+        <path d="m9 13 23 19 23-19" stroke="#f5f0e9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </a>
+  </div>
+
+  <nav class="links">
+    <a class="card" href="https://galeria-jet.vercel.app/" target="_blank" rel="noopener">Galeria<svg class="brand-mark gallery-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+      <path d="M5 10.5h5l2-3h8l2 3h5a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-12a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+      <path d="m12 7.5 1-3h7l1 3M5.5 10.5l1.2-3h3.8l1.5 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="18" cy="18" r="6.5" stroke="currentColor" stroke-width="1.8"/>
+      <circle cx="18" cy="18" r="4" stroke="currentColor" stroke-width="1.4"/>
+      <circle cx="18" cy="18" r="1.8" fill="currentColor"/>
+      <circle cx="8" cy="15" r="1" fill="currentColor"/>
+    </svg></a>
+    <a class="card" href="https://www.instagram.com/hotrack_/" target="_blank" rel="noopener">Hotrack<img class="hotrack-icon" src="assets/hotrack-icon.png" alt="" aria-hidden="true"></a>
+    <a class="card" href="https://vsco.co/itelsito/gallery" target="_blank" rel="noopener">VSCO<img class="brand-mark vsco-mark" src="assets/vsco-icon-white.png" alt="" aria-hidden="true"><span class="card-art" aria-hidden="true">
+      <img src="https://lnvuperyctbuquqvaufw.supabase.co/storage/v1/object/public/gallery/general/1792367039061-20250601_140425-0-.jpg" alt="">
+      <img src="https://lnvuperyctbuquqvaufw.supabase.co/storage/v1/object/public/gallery/general/1792367041854-20250603_152306.jpg" alt="">
+      <img src="https://lnvuperyctbuquqvaufw.supabase.co/storage/v1/object/public/gallery/general/1792367043407-20260203_232737--1-.jpg" alt="">
+      <img src="https://lnvuperyctbuquqvaufw.supabase.co/storage/v1/object/public/gallery/general/1792367044582-20260204_151117.jpg" alt="">
+    </span></a>
+    <a class="card" href="https://open.spotify.com/user/jebu0069?si=88b199a33dc24677" target="_blank" rel="noopener">Spotify<img class="brand-mark spotify-mark" src="assets/spotify-icon.png" alt="" aria-hidden="true"><span class="card-art" aria-hidden="true">
+      <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84947c69ed3b6098d72cea8600" alt="">
+      <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84ecb4f36abe422b4beb810dbd" alt="">
+    </span></a>
+  </nav>
+</main>
+</body>
+</html>
